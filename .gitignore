@@ -1,2 +1,5 @@
 btreejs/
 rock_rms/
+
+# Dependency directories
+node_modules/
