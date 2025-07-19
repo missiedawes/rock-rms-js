@@ -1,0 +1,38 @@
+{
+    "name": "@missiedawes/rock-rms-js",
+    "private": false,
+    "version": "0.1.0",
+    "description": "TypeScript client for Rock RMS",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "type": "module",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "test": "mocha"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/missiedawes/rock-rms-js.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/missiedawes/rock-rms-js/issues"
+    },
+    "homepage": "https://github.com/missiedawes/rock-rms-js#readme",
+    "dependencies": {},
+    "devDependencies": {
+        "@types/chai": "^4.3.5",
+        "@types/mocha": "^10.0.1",
+        "@types/node": "^20.17.19",
+        "chai": "^4.3.7",
+        "concurrently": "^9.1.2",
+        "mocha": "^10.2.0",
+        "nodemon": "^2.0.22",
+        "ts-node": "^10.9.1",
+        "typescript": "^5.7.3"
+    }
+}
