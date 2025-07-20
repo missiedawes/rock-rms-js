@@ -1,4 +1,4 @@
-import { RockRmsClientConfig, Resource, Person } from './interfaces';
+import { RockRmsClientConfig, Resource, Person } from './interfaces.js';
 import axios from 'axios';
 
 const defaultConfig: RockRmsClientConfig = {
@@ -39,8 +39,4 @@ export class PersonResource implements Resource {
             throw error;
         }
     }
-}
-
-export class RockRmsClient {
-    // TODO: Implement client logic here, following btreejs style
 }

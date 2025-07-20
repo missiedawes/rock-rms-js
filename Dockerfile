@@ -17,5 +17,5 @@ COPY . .
 ARG ROCK_RMS_URL
 ARG ROCK_RMS_API_KEY
 
-# Default command
-CMD [ "npm", "start" ]
+# Build and run the app
+CMD npm run build && node dist/index.js
