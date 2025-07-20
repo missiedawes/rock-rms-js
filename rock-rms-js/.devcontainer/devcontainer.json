@@ -1,0 +1,16 @@
+{
+    "name": "rock-rms-js-dev",
+    "dockerFile": "Dockerfile",
+    "context": ".",
+    "runArgs": ["--env-file=.env"],
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.shell.linux": "/bin/bash"
+            }
+        },
+        "extensions": ["dbaeumer.vscode-eslint", "esbenp.prettier-vscode"]
+    },
+    "forwardPorts": [],
+    "postCreateCommand": "npm install"
+}

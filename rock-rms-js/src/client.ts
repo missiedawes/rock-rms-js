@@ -1,8 +1,5 @@
 import { RockRmsClientConfig, Resource, Person } from './interfaces';
-import dotenv from 'dotenv';
 import axios from 'axios';
-
-dotenv.config();
 
 const defaultConfig: RockRmsClientConfig = {
     baseUrl: process.env.ROCK_RMS_URL || '',
