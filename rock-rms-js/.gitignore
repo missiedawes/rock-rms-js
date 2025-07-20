@@ -1,5 +1,8 @@
 btreejs/
 rock_rms/
 
+# Ignore environment variables file
+.env
+
 # Dependency directories
 node_modules/
