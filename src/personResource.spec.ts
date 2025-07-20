@@ -1,4 +1,4 @@
-import { RockRmsClient } from './client';
+import { RockRmsClient } from './client.js';
 import { expect } from 'chai';
 
 describe('PersonResource', function () {

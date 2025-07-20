@@ -9,6 +9,5 @@
         "moduleDetection": "force",
         "sourceMap": false
     },
-    "include": ["index.ts", "src/**/*", "src/client.ts"],
-    "exclude": ["src/**/*.spec.ts"]
+    "include": ["src/**/*"]
 }
