@@ -1,5 +1,6 @@
 import { RockRmsClientConfig, Resource } from '../interfaces/interfaces.js';
 import { Person } from '../interfaces/people.js';
+import { PersonSchema } from '../validation/people.js';
 import axios from 'axios';
 
 export class PeopleResource implements Resource<Person> {
@@ -17,9 +18,8 @@ export class PeopleResource implements Resource<Person> {
         }
         try {
             const response = await axios.get(url, { headers });
-            return response.data as Person;
+            return PersonSchema.parse(response.data);
         } catch (error) {
-            // Handle error as needed
             throw error;
         }
     }

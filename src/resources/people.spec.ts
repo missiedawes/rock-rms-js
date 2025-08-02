@@ -10,7 +10,7 @@ const config = {
 describe('People', function () {
     it('should fetch person with ID 358837', async function () {
         const client = new RockRmsClient(config);
-        const person = await client.person().get(358837);
+        const person = await client.person().getById(358837);
         expect(person.FirstName).to.equal('Melissa');
         expect(person.LastName).to.equal('Dawes');
     });
