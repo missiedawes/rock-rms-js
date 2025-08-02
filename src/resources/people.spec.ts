@@ -1,4 +1,3 @@
-import { error } from 'console';
 import { RockRmsClient } from '../client.js';
 import { expect } from 'chai';
 
