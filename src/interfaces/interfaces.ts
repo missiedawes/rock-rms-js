@@ -4,5 +4,5 @@ export interface RockRmsClientConfig {
 }
 
 export interface Resource<T> {
-    get(id: string | number): Promise<T>;
+    getById(id: string | number): Promise<T>;
 }

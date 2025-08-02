@@ -9,7 +9,7 @@ export class PeopleResource implements Resource<Person> {
         this.config = config;
     }
 
-    async get(id: string | number): Promise<Person> {
+    async getById(id: string | number): Promise<Person> {
         const url = `${this.config.baseUrl}/api/People/${id}`;
         const headers: Record<string, string> = {};
         if (this.config.apiKey) {
