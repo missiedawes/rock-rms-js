@@ -11,7 +11,8 @@
     ],
     "scripts": {
         "build": "tsc",
-        "test": "mocha"
+        "test": "mocha",
+        "build-and-test": "npm run build && npm test"
     },
     "repository": {
         "type": "git",
